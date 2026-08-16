@@ -29,15 +29,15 @@ jobs:
         Remove-Item -ErrorAction SilentlyContinue backend\package-lock.json
 
     - name: Install dependencies
-      run: npm install --no-package-lock
+      run: npm install --no-package-lock --legacy-peer-deps
 
     - name: Install frontend dependencies
       working-directory: ./frontend
-      run: npm install --no-package-lock
+      run: npm install --no-package-lock --legacy-peer-deps
 
     - name: Install backend dependencies
       working-directory: ./backend
-      run: npm install --no-package-lock --ignore-scripts
+      run: npm install --no-package-lock --ignore-scripts --legacy-peer-deps || (Get-ChildItem -Path "$env:LocalAppData\npm-cache\_logs\*.log" | Sort-Object LastWriteTime | Select-Object -Last 1 | Get-Content -Tail 50; exit 1)
 
     - name: Generate Prisma Client
       working-directory: ./backend
