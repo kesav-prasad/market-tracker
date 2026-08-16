@@ -37,7 +37,7 @@ jobs:
 
     - name: Install backend dependencies
       working-directory: ./backend
-      run: npm install --no-package-lock
+      run: npm install --no-package-lock --ignore-scripts
 
     - name: Generate Prisma Client
       working-directory: ./backend
