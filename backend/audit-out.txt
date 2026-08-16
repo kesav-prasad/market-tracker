@@ -1,0 +1,69 @@
+--------------------------------------------------
+PRICE AUDIT
+--------------------------------------------------
+Symbol: NIFTYBEES
+
+Market Date: 2026-07-29T18:30:00.000Z (IST: Thu Jul 30 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-07-28T18:30:00.000Z
+Previous Close: 275.8200073242188
+Current Price: 276.489990234375
+Application Daily Change: 0.2429058416232462%
+Status: VERIFIED
+
+Market Date: 2026-07-30T18:30:00.000Z (IST: Fri Jul 31 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-07-29T18:30:00.000Z
+Previous Close: 276.489990234375
+Current Price: 277.4200134277344
+Application Daily Change: 0.3363677623812034%
+Status: VERIFIED
+
+Market Date: 2026-08-02T18:30:00.000Z (IST: Mon Aug 03 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-07-30T18:30:00.000Z
+Previous Close: 277.4200134277344
+Current Price: 279.8699951171875
+Application Daily Change: 0.8831308380321037%
+Status: VERIFIED
+
+Market Date: 2026-08-03T18:30:00.000Z (IST: Tue Aug 04 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-08-02T18:30:00.000Z
+Previous Close: 279.8699951171875
+Current Price: 278.932
+Application Daily Change: -0.4%
+Status: VERIFIED
+
+Market Date: 2026-08-04T18:30:00.000Z (IST: Wed Aug 05 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-08-03T18:30:00.000Z
+Previous Close: 278.932
+Current Price: 280.302
+Application Daily Change: 0.5%
+Status: VERIFIED
+
+Market Date: 2026-08-05T18:30:00.000Z (IST: Thu Aug 06 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-08-04T18:30:00.000Z
+Previous Close: 280.302
+Current Price: 280.576
+Application Daily Change: 0.2%
+Status: VERIFIED
+
+Market Date: 2026-08-06T18:30:00.000Z (IST: Fri Aug 07 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-08-05T18:30:00.000Z
+Previous Close: 280.576
+Current Price: 280.028
+Application Daily Change: -0.3%
+Status: VERIFIED
+
+Market Date: 2026-08-09T18:30:00.000Z (IST: Mon Aug 10 2026 00:00:00 GMT+0530 (India Standard Time))
+Previous Trading Date: 2026-08-06T18:30:00.000Z
+Previous Close: 280.028
+Current Price: 280.4599914550781
+Application Daily Change: 0.2251384458576609%
+Status: VERIFIED
+Symbol: SENSEXBETA
+Date: Thu Jul 30 2026 | i-1.Price: undefined | curr.PrevClose: undefined | Curr: undefined | DBChange: undefined% | CalcChange: NaN%
+Date: Fri Jul 31 2026 | i-1.Price: undefined | curr.PrevClose: undefined | Curr: undefined | DBChange: undefined% | CalcChange: NaN%
+Date: Mon Aug 03 2026 | i-1.Price: undefined | curr.PrevClose: undefined | Curr: undefined | DBChange: undefined% | CalcChange: NaN%
+Date: Tue Aug 04 2026 | i-1.Price: undefined | curr.PrevClose: 860.21 | Curr: 865.28 | DBChange: 0.10% | CalcChange: 0.59%
+Date: Wed Aug 05 2026 | i-1.Price: 865.28 | curr.PrevClose: 865.28 | Curr: 865.28 | DBChange: -0.10% | CalcChange: 0.00%
+Date: Thu Aug 06 2026 | i-1.Price: 865.28 | curr.PrevClose: 865.28 | Curr: 862.74 | DBChange: -0.70% | CalcChange: -0.29%
+Date: Fri Aug 07 2026 | i-1.Price: 862.74 | curr.PrevClose: 862.74 | Curr: 870.35 | DBChange: 0.80% | CalcChange: 0.88%
+Date: Mon Aug 10 2026 | i-1.Price: 870.35 | curr.PrevClose: 870.65 | Curr: 869.26 | DBChange: -0.16% | CalcChange: -0.16%

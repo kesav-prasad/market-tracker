@@ -1,0 +1,7 @@
+Current Series boundaries (for 2026-08-13T10:00:00.000Z):
+Reference Date (Previous Expiry Close): 2026-07-28
+Expected Expiry Date: 2026-08-25
+
+Next Series boundaries (for 2026-08-28T10:00:00.000Z):
+Reference Date (Previous Expiry Close): 2026-08-24
+Expected Expiry Date: 2026-09-28

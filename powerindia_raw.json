@@ -1,0 +1,1159 @@
+{
+  "matrix": {
+    "instrument": "POWERINDIA",
+    "category": "EQUITY",
+    "data": {
+      "2026-07-29": {
+        "price": 31675,
+        "todayChange": 1.750722775457758,
+        "seriesChange": 1.750722775457758
+      },
+      "2026-08-12": {
+        "price": 35580,
+        "todayChange": 12.32833464877664,
+        "seriesChange": 12.32833464877664
+      }
+    }
+  },
+  "ytd": {
+    "symbol": "POWERINDIA",
+    "range": "1Y",
+    "series": [
+      {
+        "seriesId": 2,
+        "referenceDate": "2026-01-01",
+        "referencePrice": null,
+        "expiryDate": "2026-07-28",
+        "observations": [
+          {
+            "date": "2026-01-02",
+            "price": 18482,
+            "seriesChange": 0,
+            "ytdChange": 0,
+            "dailyChange": 0
+          },
+          {
+            "date": "2026-01-03",
+            "price": 18803,
+            "seriesChange": 1.736825018937345,
+            "ytdChange": 1.736825018937345,
+            "dailyChange": 1.736825018937345
+          },
+          {
+            "date": "2026-01-06",
+            "price": 19004,
+            "seriesChange": 2.824369656963532,
+            "ytdChange": 2.824369656963532,
+            "dailyChange": 1.068978354517896
+          },
+          {
+            "date": "2026-01-07",
+            "price": 18847,
+            "seriesChange": 1.974894491938102,
+            "ytdChange": 1.974894491938102,
+            "dailyChange": -0.8261418648705535
+          },
+          {
+            "date": "2026-01-08",
+            "price": 19582,
+            "seriesChange": 5.951736825018937,
+            "ytdChange": 5.951736825018937,
+            "dailyChange": 3.899824905820555
+          },
+          {
+            "date": "2026-01-09",
+            "price": 18444,
+            "seriesChange": -0.2056054539551997,
+            "ytdChange": -0.2056054539551997,
+            "dailyChange": -5.811459503625779
+          },
+          {
+            "date": "2026-01-10",
+            "price": 17881,
+            "seriesChange": -3.25181257439671,
+            "ytdChange": -3.25181257439671,
+            "dailyChange": -3.052483192366081
+          },
+          {
+            "date": "2026-01-13",
+            "price": 17429,
+            "seriesChange": -5.697435342495401,
+            "ytdChange": -5.697435342495401,
+            "dailyChange": -2.527822828700856
+          },
+          {
+            "date": "2026-01-14",
+            "price": 17106,
+            "seriesChange": -7.445081701114598,
+            "ytdChange": -7.445081701114598,
+            "dailyChange": -1.853233117218429
+          },
+          {
+            "date": "2026-01-15",
+            "price": 16937,
+            "seriesChange": -8.359484904231145,
+            "ytdChange": -8.359484904231145,
+            "dailyChange": -0.9879574418332749
+          },
+          {
+            "date": "2026-01-16",
+            "price": 16937,
+            "seriesChange": -8.359484904231145,
+            "ytdChange": -8.359484904231145,
+            "dailyChange": 0
+          },
+          {
+            "date": "2026-01-17",
+            "price": 16214,
+            "seriesChange": -12.27139919922086,
+            "ytdChange": -12.27139919922086,
+            "dailyChange": -4.26876070142292
+          },
+          {
+            "date": "2026-01-20",
+            "price": 16964,
+            "seriesChange": -8.213396818526133,
+            "ytdChange": -8.213396818526133,
+            "dailyChange": 4.625632169729863
+          },
+          {
+            "date": "2026-01-21",
+            "price": 16630,
+            "seriesChange": -10.02056054539552,
+            "ytdChange": -10.02056054539552,
+            "dailyChange": -1.968875265267626
+          },
+          {
+            "date": "2026-01-22",
+            "price": 16689,
+            "seriesChange": -9.701331024780869,
+            "ytdChange": -9.701331024780869,
+            "dailyChange": 0.354780517137703
+          },
+          {
+            "date": "2026-01-23",
+            "price": 16847,
+            "seriesChange": -8.846445189914512,
+            "ytdChange": -8.846445189914512,
+            "dailyChange": 0.9467313799508659
+          },
+          {
+            "date": "2026-01-24",
+            "price": 16501,
+            "seriesChange": -10.71853695487501,
+            "ytdChange": -10.71853695487501,
+            "dailyChange": -2.053778120733662
+          },
+          {
+            "date": "2026-01-28",
+            "price": 16709,
+            "seriesChange": -9.593117627962341,
+            "ytdChange": -9.593117627962341,
+            "dailyChange": 1.260529664868796
+          },
+          {
+            "date": "2026-01-29",
+            "price": 17683,
+            "seriesChange": -4.323125202900119,
+            "ytdChange": -4.323125202900119,
+            "dailyChange": 5.829193847627027
+          },
+          {
+            "date": "2026-01-30",
+            "price": 18322,
+            "seriesChange": -0.8657071745482091,
+            "ytdChange": -0.8657071745482091,
+            "dailyChange": 3.613640219419782
+          },
+          {
+            "date": "2026-01-31",
+            "price": 18862,
+            "seriesChange": 2.056054539551997,
+            "ytdChange": 2.056054539551997,
+            "dailyChange": 2.947276498198887
+          }
+        ]
+      },
+      {
+        "seriesId": 3,
+        "referenceDate": "2026-02-01",
+        "referencePrice": null,
+        "expiryDate": "2026-03-01",
+        "observations": [
+          {
+            "date": "2026-02-03",
+            "price": 18978,
+            "seriesChange": 0,
+            "ytdChange": 2.683692241099448,
+            "dailyChange": 0.6149931078358605
+          },
+          {
+            "date": "2026-02-04",
+            "price": 19701,
+            "seriesChange": 3.809674359785014,
+            "ytdChange": 6.595606536089167,
+            "dailyChange": 3.809674359785014
+          },
+          {
+            "date": "2026-02-05",
+            "price": 19043,
+            "seriesChange": 0.3425018442406997,
+            "ytdChange": 3.035385780759658,
+            "dailyChange": -3.339931983148064
+          },
+          {
+            "date": "2026-02-06",
+            "price": 19199,
+            "seriesChange": 1.164506270418379,
+            "ytdChange": 3.879450275944162,
+            "dailyChange": 0.819198655674001
+          },
+          {
+            "date": "2026-02-07",
+            "price": 21871,
+            "seriesChange": 15.24396669828222,
+            "ytdChange": 18.33676009089925,
+            "dailyChange": 13.9173915308089
+          },
+          {
+            "date": "2026-02-10",
+            "price": 22511,
+            "seriesChange": 18.61629254926757,
+            "ytdChange": 21.79958878909209,
+            "dailyChange": 2.926249371313612
+          },
+          {
+            "date": "2026-02-11",
+            "price": 22457,
+            "seriesChange": 18.33175255559068,
+            "ytdChange": 21.50741261768207,
+            "dailyChange": -0.2398827240015992
+          },
+          {
+            "date": "2026-02-12",
+            "price": 22731,
+            "seriesChange": 19.77552956054379,
+            "ytdChange": 22.98993615409588,
+            "dailyChange": 1.220109542681569
+          },
+          {
+            "date": "2026-02-13",
+            "price": 22702,
+            "seriesChange": 19.62272104542101,
+            "ytdChange": 22.83302672870901,
+            "dailyChange": -0.1275790770313668
+          },
+          {
+            "date": "2026-02-14",
+            "price": 22418,
+            "seriesChange": 18.12625144904626,
+            "ytdChange": 21.29639649388594,
+            "dailyChange": -1.250991102105541
+          },
+          {
+            "date": "2026-02-17",
+            "price": 22824,
+            "seriesChange": 20.2655706607651,
+            "ytdChange": 23.49312844930202,
+            "dailyChange": 1.811044696226247
+          },
+          {
+            "date": "2026-02-18",
+            "price": 22977,
+            "seriesChange": 21.07176730951628,
+            "ytdChange": 24.32096093496375,
+            "dailyChange": 0.6703470031545742
+          },
+          {
+            "date": "2026-02-19",
+            "price": 23569,
+            "seriesChange": 24.19116872167773,
+            "ytdChange": 27.52407748079212,
+            "dailyChange": 2.576489533011272
+          },
+          {
+            "date": "2026-02-20",
+            "price": 22851,
+            "seriesChange": 20.40784065760354,
+            "ytdChange": 23.63921653500703,
+            "dailyChange": -3.046374474945903
+          },
+          {
+            "date": "2026-02-21",
+            "price": 23871,
+            "seriesChange": 25.78248498261144,
+            "ytdChange": 29.15809977275187,
+            "dailyChange": 4.463699619272679
+          },
+          {
+            "date": "2026-02-24",
+            "price": 24243,
+            "seriesChange": 27.74264938349668,
+            "ytdChange": 31.17086895357645,
+            "dailyChange": 1.558376272464497
+          },
+          {
+            "date": "2026-02-25",
+            "price": 24903,
+            "seriesChange": 31.22036041732532,
+            "ytdChange": 34.74191104858782,
+            "dailyChange": 2.722435342160624
+          },
+          {
+            "date": "2026-02-26",
+            "price": 24986,
+            "seriesChange": 31.65770892612499,
+            "ytdChange": 35.1909966453847,
+            "dailyChange": 0.3332931775288118
+          },
+          {
+            "date": "2026-02-27",
+            "price": 25401,
+            "seriesChange": 33.8444514701233,
+            "ytdChange": 37.43642462936911,
+            "dailyChange": 1.660930120867686
+          },
+          {
+            "date": "2026-02-28",
+            "price": 25562,
+            "seriesChange": 34.6928021920118,
+            "ytdChange": 38.30754247375825,
+            "dailyChange": 0.6338333136490689
+          }
+        ]
+      },
+      {
+        "seriesId": 4,
+        "referenceDate": "2026-03-01",
+        "referencePrice": null,
+        "expiryDate": "2026-04-01",
+        "observations": [
+          {
+            "date": "2026-03-03",
+            "price": 25500,
+            "seriesChange": 0,
+            "ytdChange": 37.97208094362082,
+            "dailyChange": -0.2425475314920585
+          },
+          {
+            "date": "2026-03-05",
+            "price": 24500,
+            "seriesChange": -3.92156862745098,
+            "ytdChange": 32.56141110269451,
+            "dailyChange": -3.92156862745098
+          },
+          {
+            "date": "2026-03-06",
+            "price": 25305,
+            "seriesChange": -0.7647058823529412,
+            "ytdChange": 36.91700032464019,
+            "dailyChange": 3.285714285714286
+          },
+          {
+            "date": "2026-03-07",
+            "price": 25860,
+            "seriesChange": 1.411764705882353,
+            "ytdChange": 39.91992208635429,
+            "dailyChange": 2.193242442205098
+          },
+          {
+            "date": "2026-03-10",
+            "price": 25160,
+            "seriesChange": -1.333333333333333,
+            "ytdChange": 36.13245319770588,
+            "dailyChange": -2.706883217324053
+          },
+          {
+            "date": "2026-03-11",
+            "price": 25225,
+            "seriesChange": -1.07843137254902,
+            "ytdChange": 36.48414673736609,
+            "dailyChange": 0.2583465818759936
+          },
+          {
+            "date": "2026-03-12",
+            "price": 24955,
+            "seriesChange": -2.137254901960784,
+            "ytdChange": 35.02326588031598,
+            "dailyChange": -1.070366699702676
+          },
+          {
+            "date": "2026-03-13",
+            "price": 24880,
+            "seriesChange": -2.431372549019608,
+            "ytdChange": 34.61746564224651,
+            "dailyChange": -0.300540973752755
+          },
+          {
+            "date": "2026-03-14",
+            "price": 24165,
+            "seriesChange": -5.235294117647059,
+            "ytdChange": 30.7488367059842,
+            "dailyChange": -2.87379421221865
+          },
+          {
+            "date": "2026-03-17",
+            "price": 24205,
+            "seriesChange": -5.078431372549019,
+            "ytdChange": 30.96526349962125,
+            "dailyChange": 0.1655286571487689
+          },
+          {
+            "date": "2026-03-18",
+            "price": 24710,
+            "seriesChange": -3.098039215686275,
+            "ytdChange": 33.69765176928904,
+            "dailyChange": 2.086345796323074
+          },
+          {
+            "date": "2026-03-19",
+            "price": 24975,
+            "seriesChange": -2.058823529411764,
+            "ytdChange": 35.13147927713451,
+            "dailyChange": 1.072440307567786
+          },
+          {
+            "date": "2026-03-20",
+            "price": 24650,
+            "seriesChange": -3.333333333333333,
+            "ytdChange": 33.37301157883346,
+            "dailyChange": -1.301301301301301
+          },
+          {
+            "date": "2026-03-21",
+            "price": 25025,
+            "seriesChange": -1.862745098039216,
+            "ytdChange": 35.40201276918082,
+            "dailyChange": 1.521298174442191
+          },
+          {
+            "date": "2026-03-24",
+            "price": 24255,
+            "seriesChange": -4.88235294117647,
+            "ytdChange": 31.23579699166757,
+            "dailyChange": -3.076923076923077
+          },
+          {
+            "date": "2026-03-25",
+            "price": 25025,
+            "seriesChange": -1.862745098039216,
+            "ytdChange": 35.40201276918082,
+            "dailyChange": 3.174603174603174
+          },
+          {
+            "date": "2026-03-26",
+            "price": 25670,
+            "seriesChange": 0.6666666666666667,
+            "ytdChange": 38.89189481657829,
+            "dailyChange": 2.577422577422578
+          },
+          {
+            "date": "2026-03-28",
+            "price": 24685,
+            "seriesChange": -3.196078431372549,
+            "ytdChange": 33.56238502326588,
+            "dailyChange": -3.837164004674718
+          },
+          {
+            "date": "2026-03-31",
+            "price": 24235,
+            "seriesChange": -4.96078431372549,
+            "ytdChange": 31.12758359484904,
+            "dailyChange": -1.822969414624266
+          }
+        ]
+      },
+      {
+        "seriesId": 5,
+        "referenceDate": "2026-04-01",
+        "referencePrice": null,
+        "expiryDate": "2026-05-01",
+        "observations": [
+          {
+            "date": "2026-04-02",
+            "price": 25065,
+            "seriesChange": 0,
+            "ytdChange": 35.61843956281788,
+            "dailyChange": 3.424798844646173
+          },
+          {
+            "date": "2026-04-03",
+            "price": 25325,
+            "seriesChange": 1.037303012168362,
+            "ytdChange": 37.02521372145872,
+            "dailyChange": 1.037303012168362
+          },
+          {
+            "date": "2026-04-07",
+            "price": 25015,
+            "seriesChange": -0.1994813484939158,
+            "ytdChange": 35.34790607077156,
+            "dailyChange": -1.224086870681145
+          },
+          {
+            "date": "2026-04-08",
+            "price": 25030,
+            "seriesChange": -0.1396369439457411,
+            "ytdChange": 35.42906611838546,
+            "dailyChange": 0.05996402158704776
+          },
+          {
+            "date": "2026-04-09",
+            "price": 25915,
+            "seriesChange": 3.391182924396569,
+            "ytdChange": 40.21750892760524,
+            "dailyChange": 3.535757091490212
+          },
+          {
+            "date": "2026-04-10",
+            "price": 27315,
+            "seriesChange": 8.976660682226212,
+            "ytdChange": 47.79244670490207,
+            "dailyChange": 5.402276673741077
+          },
+          {
+            "date": "2026-04-11",
+            "price": 28425,
+            "seriesChange": 13.40514661879114,
+            "ytdChange": 53.79829022833027,
+            "dailyChange": 4.063701263042285
+          },
+          {
+            "date": "2026-04-14",
+            "price": 28325,
+            "seriesChange": 13.00618392180331,
+            "ytdChange": 53.25722324423764,
+            "dailyChange": -0.3518029903254178
+          },
+          {
+            "date": "2026-04-16",
+            "price": 28435,
+            "seriesChange": 13.44504288848993,
+            "ytdChange": 53.85239692673953,
+            "dailyChange": 0.3883495145631068
+          },
+          {
+            "date": "2026-04-17",
+            "price": 28255,
+            "seriesChange": 12.72691003391183,
+            "ytdChange": 52.8784763553728,
+            "dailyChange": -0.6330226833128186
+          },
+          {
+            "date": "2026-04-18",
+            "price": 28925,
+            "seriesChange": 15.3999601037303,
+            "ytdChange": 56.50362514879343,
+            "dailyChange": 2.371261723588745
+          },
+          {
+            "date": "2026-04-21",
+            "price": 29645,
+            "seriesChange": 18.27249152204269,
+            "ytdChange": 60.39930743426036,
+            "dailyChange": 2.489196197061366
+          },
+          {
+            "date": "2026-04-22",
+            "price": 29890,
+            "seriesChange": 19.24995012966288,
+            "ytdChange": 61.7249215452873,
+            "dailyChange": 0.8264462809917356
+          },
+          {
+            "date": "2026-04-23",
+            "price": 30335,
+            "seriesChange": 21.02533413125873,
+            "ytdChange": 64.13266962449951,
+            "dailyChange": 1.488792238206758
+          },
+          {
+            "date": "2026-04-24",
+            "price": 31720,
+            "seriesChange": 26.55096748454019,
+            "ytdChange": 71.62644735418245,
+            "dailyChange": 4.565683204219549
+          },
+          {
+            "date": "2026-04-25",
+            "price": 32200,
+            "seriesChange": 28.46598843008179,
+            "ytdChange": 74.22356887782708,
+            "dailyChange": 1.513240857503153
+          },
+          {
+            "date": "2026-04-28",
+            "price": 32065,
+            "seriesChange": 27.92738878914822,
+            "ytdChange": 73.49312844930202,
+            "dailyChange": -0.4192546583850931
+          },
+          {
+            "date": "2026-04-29",
+            "price": 32805,
+            "seriesChange": 30.87971274685817,
+            "ytdChange": 77.4970241315875,
+            "dailyChange": 2.30781225635428
+          },
+          {
+            "date": "2026-04-30",
+            "price": 32885,
+            "seriesChange": 31.19888290444843,
+            "ytdChange": 77.92987771886159,
+            "dailyChange": 0.2438652644413961
+          }
+        ]
+      },
+      {
+        "seriesId": 6,
+        "referenceDate": "2026-05-01",
+        "referencePrice": null,
+        "expiryDate": "2026-06-01",
+        "observations": [
+          {
+            "date": "2026-05-01",
+            "price": 33550,
+            "seriesChange": 0,
+            "ytdChange": 81.52797316307759,
+            "dailyChange": 2.02219857077695
+          },
+          {
+            "date": "2026-05-02",
+            "price": 33550,
+            "seriesChange": 0,
+            "ytdChange": 81.52797316307759,
+            "dailyChange": 0
+          },
+          {
+            "date": "2026-05-05",
+            "price": 33730,
+            "seriesChange": 0.5365126676602087,
+            "ytdChange": 82.50189373444432,
+            "dailyChange": 0.5365126676602087
+          },
+          {
+            "date": "2026-05-06",
+            "price": 34255,
+            "seriesChange": 2.10134128166915,
+            "ytdChange": 85.34249540093064,
+            "dailyChange": 1.556477912837237
+          },
+          {
+            "date": "2026-05-07",
+            "price": 33380,
+            "seriesChange": -0.5067064083457526,
+            "ytdChange": 80.60815929012011,
+            "dailyChange": -2.554371624580353
+          },
+          {
+            "date": "2026-05-08",
+            "price": 34875,
+            "seriesChange": 3.949329359165425,
+            "ytdChange": 88.69711070230495,
+            "dailyChange": 4.478729778310366
+          },
+          {
+            "date": "2026-05-09",
+            "price": 34005,
+            "seriesChange": 1.35618479880775,
+            "ytdChange": 83.98982794069906,
+            "dailyChange": -2.494623655913978
+          },
+          {
+            "date": "2026-05-12",
+            "price": 33020,
+            "seriesChange": -1.57973174366617,
+            "ytdChange": 78.66031814738665,
+            "dailyChange": -2.896632848110572
+          },
+          {
+            "date": "2026-05-13",
+            "price": 32265,
+            "seriesChange": -3.830104321907601,
+            "ytdChange": 74.57526241748728,
+            "dailyChange": -2.28649303452453
+          },
+          {
+            "date": "2026-05-14",
+            "price": 31745,
+            "seriesChange": -5.380029806259314,
+            "ytdChange": 71.76171410020561,
+            "dailyChange": -1.611653494498683
+          },
+          {
+            "date": "2026-05-15",
+            "price": 32290,
+            "seriesChange": -3.755588673621461,
+            "ytdChange": 74.71052916351044,
+            "dailyChange": 1.716805796188376
+          },
+          {
+            "date": "2026-05-16",
+            "price": 32535,
+            "seriesChange": -3.025335320417287,
+            "ytdChange": 76.03614327453738,
+            "dailyChange": 0.7587488386497367
+          },
+          {
+            "date": "2026-05-19",
+            "price": 32800,
+            "seriesChange": -2.235469448584203,
+            "ytdChange": 77.46997078238286,
+            "dailyChange": 0.8145074535116028
+          },
+          {
+            "date": "2026-05-20",
+            "price": 33360,
+            "seriesChange": -0.5663189269746647,
+            "ytdChange": 80.4999458933016,
+            "dailyChange": 1.707317073170732
+          },
+          {
+            "date": "2026-05-21",
+            "price": 35525,
+            "seriesChange": 5.886736214605067,
+            "ytdChange": 92.21404609890705,
+            "dailyChange": 6.489808153477219
+          },
+          {
+            "date": "2026-05-22",
+            "price": 36450,
+            "seriesChange": 8.64381520119225,
+            "ytdChange": 97.21891570176388,
+            "dailyChange": 2.603800140745954
+          },
+          {
+            "date": "2026-05-23",
+            "price": 35555,
+            "seriesChange": 5.976154992548436,
+            "ytdChange": 92.37636619413483,
+            "dailyChange": -2.455418381344308
+          },
+          {
+            "date": "2026-05-26",
+            "price": 35635,
+            "seriesChange": 6.214605067064084,
+            "ytdChange": 92.80921978140894,
+            "dailyChange": 0.2250035156799325
+          },
+          {
+            "date": "2026-05-27",
+            "price": 35995,
+            "seriesChange": 7.287630402384501,
+            "ytdChange": 94.75706092414241,
+            "dailyChange": 1.010242738880314
+          },
+          {
+            "date": "2026-05-28",
+            "price": 37550,
+            "seriesChange": 11.92250372578241,
+            "ytdChange": 103.1706525267828,
+            "dailyChange": 4.320044450618141
+          },
+          {
+            "date": "2026-05-29",
+            "price": 37550,
+            "seriesChange": 11.92250372578241,
+            "ytdChange": 103.1706525267828,
+            "dailyChange": 0
+          },
+          {
+            "date": "2026-05-30",
+            "price": 38445,
+            "seriesChange": 14.59016393442623,
+            "ytdChange": 108.0132020344119,
+            "dailyChange": 2.383488681757656
+          }
+        ]
+      },
+      {
+        "seriesId": 7,
+        "referenceDate": "2026-06-01",
+        "referencePrice": null,
+        "expiryDate": "2026-07-01",
+        "observations": [
+          {
+            "date": "2026-06-02",
+            "price": 36380,
+            "seriesChange": 0,
+            "ytdChange": 96.84016881289904,
+            "dailyChange": -5.371309663155157
+          },
+          {
+            "date": "2026-06-03",
+            "price": 35105,
+            "seriesChange": -3.504672897196262,
+            "ytdChange": 89.941564765718,
+            "dailyChange": -3.504672897196262
+          },
+          {
+            "date": "2026-06-04",
+            "price": 35190,
+            "seriesChange": -3.271028037383177,
+            "ytdChange": 90.40147170219673,
+            "dailyChange": 0.2421307506053269
+          },
+          {
+            "date": "2026-06-05",
+            "price": 36525,
+            "seriesChange": 0.3985706432105552,
+            "ytdChange": 97.62471593983335,
+            "dailyChange": 3.793691389599318
+          },
+          {
+            "date": "2026-06-06",
+            "price": 36870,
+            "seriesChange": 1.346893897746014,
+            "ytdChange": 99.49139703495293,
+            "dailyChange": 0.944558521560575
+          },
+          {
+            "date": "2026-06-09",
+            "price": 35010,
+            "seriesChange": -3.765805387575591,
+            "ytdChange": 89.42755113083,
+            "dailyChange": -5.044751830756713
+          },
+          {
+            "date": "2026-06-10",
+            "price": 34610,
+            "seriesChange": -4.865310610225398,
+            "ytdChange": 87.26328319445948,
+            "dailyChange": -1.142530705512711
+          },
+          {
+            "date": "2026-06-11",
+            "price": 33265,
+            "seriesChange": -8.562396921385377,
+            "ytdChange": 79.9859322584136,
+            "dailyChange": -3.886160069344121
+          },
+          {
+            "date": "2026-06-12",
+            "price": 33250,
+            "seriesChange": -8.603628367234744,
+            "ytdChange": 79.9047722107997,
+            "dailyChange": -0.045092439500977
+          },
+          {
+            "date": "2026-06-13",
+            "price": 34325,
+            "seriesChange": -5.648708081363386,
+            "ytdChange": 85.72124228979547,
+            "dailyChange": 3.233082706766917
+          },
+          {
+            "date": "2026-06-16",
+            "price": 34695,
+            "seriesChange": -4.631665750412314,
+            "ytdChange": 87.7231901309382,
+            "dailyChange": 1.077931536780772
+          },
+          {
+            "date": "2026-06-17",
+            "price": 34740,
+            "seriesChange": -4.507971412864211,
+            "ytdChange": 87.9666702737799,
+            "dailyChange": 0.1297016861219196
+          },
+          {
+            "date": "2026-06-18",
+            "price": 35950,
+            "seriesChange": -1.181968114348543,
+            "ytdChange": 94.51358078130072,
+            "dailyChange": 3.483016695451929
+          },
+          {
+            "date": "2026-06-19",
+            "price": 36300,
+            "seriesChange": -0.2199010445299615,
+            "ytdChange": 96.40731522562493,
+            "dailyChange": 0.9735744089012517
+          },
+          {
+            "date": "2026-06-20",
+            "price": 36880,
+            "seriesChange": 1.374381528312259,
+            "ytdChange": 99.5455037333622,
+            "dailyChange": 1.597796143250689
+          },
+          {
+            "date": "2026-06-23",
+            "price": 36760,
+            "seriesChange": 1.044529961517317,
+            "ytdChange": 98.89622335245103,
+            "dailyChange": -0.3253796095444685
+          },
+          {
+            "date": "2026-06-24",
+            "price": 36090,
+            "seriesChange": -0.7971412864211105,
+            "ytdChange": 95.27107455903041,
+            "dailyChange": -1.822633297062024
+          },
+          {
+            "date": "2026-06-25",
+            "price": 33950,
+            "seriesChange": -6.679494227597581,
+            "ytdChange": 83.69224109944811,
+            "dailyChange": -5.929620393460793
+          },
+          {
+            "date": "2026-06-26",
+            "price": 33965,
+            "seriesChange": -6.638262781748214,
+            "ytdChange": 83.773401147062,
+            "dailyChange": 0.04418262150220913
+          },
+          {
+            "date": "2026-06-27",
+            "price": 33965,
+            "seriesChange": -6.638262781748214,
+            "ytdChange": 83.773401147062,
+            "dailyChange": 0
+          },
+          {
+            "date": "2026-06-30",
+            "price": 34975,
+            "seriesChange": -3.862012094557449,
+            "ytdChange": 89.23817768639758,
+            "dailyChange": 2.973649344913882
+          }
+        ]
+      },
+      {
+        "seriesId": 8,
+        "referenceDate": "2026-07-01",
+        "referencePrice": null,
+        "expiryDate": "2026-08-01",
+        "observations": [
+          {
+            "date": "2026-07-01",
+            "price": 34920,
+            "seriesChange": 0,
+            "ytdChange": 88.94059084514663,
+            "dailyChange": -0.1572551822730522
+          },
+          {
+            "date": "2026-07-02",
+            "price": 34250,
+            "seriesChange": -1.918671248568156,
+            "ytdChange": 85.315442051726,
+            "dailyChange": -1.918671248568156
+          },
+          {
+            "date": "2026-07-03",
+            "price": 33775,
+            "seriesChange": -3.278923253150058,
+            "ytdChange": 82.74537387728601,
+            "dailyChange": -1.386861313868613
+          },
+          {
+            "date": "2026-07-04",
+            "price": 31040,
+            "seriesChange": -11.11111111111111,
+            "ytdChange": 67.94719186235257,
+            "dailyChange": -8.097705403404886
+          },
+          {
+            "date": "2026-07-07",
+            "price": 32360,
+            "seriesChange": -7.331042382588775,
+            "ytdChange": 75.08927605237528,
+            "dailyChange": 4.252577319587629
+          },
+          {
+            "date": "2026-07-08",
+            "price": 31915,
+            "seriesChange": -8.605383734249713,
+            "ytdChange": 72.68152797316307,
+            "dailyChange": -1.375154511742892
+          },
+          {
+            "date": "2026-07-09",
+            "price": 31755,
+            "seriesChange": -9.063573883161512,
+            "ytdChange": 71.81582079861487,
+            "dailyChange": -0.5013316622277926
+          },
+          {
+            "date": "2026-07-10",
+            "price": 32610,
+            "seriesChange": -6.61512027491409,
+            "ytdChange": 76.44194351260685,
+            "dailyChange": 2.69248937175248
+          },
+          {
+            "date": "2026-07-11",
+            "price": 32605,
+            "seriesChange": -6.629438717067583,
+            "ytdChange": 76.41489016340223,
+            "dailyChange": -0.01533272002453235
+          },
+          {
+            "date": "2026-07-14",
+            "price": 31915,
+            "seriesChange": -8.605383734249713,
+            "ytdChange": 72.68152797316307,
+            "dailyChange": -2.116239840515258
+          },
+          {
+            "date": "2026-07-15",
+            "price": 32490,
+            "seriesChange": -6.958762886597938,
+            "ytdChange": 75.7926631316957,
+            "dailyChange": 1.801660661131129
+          },
+          {
+            "date": "2026-07-16",
+            "price": 33980,
+            "seriesChange": -2.691867124856816,
+            "ytdChange": 83.85456119467591,
+            "dailyChange": 4.586026469682979
+          },
+          {
+            "date": "2026-07-17",
+            "price": 33545,
+            "seriesChange": -3.937571592210767,
+            "ytdChange": 81.50091981387297,
+            "dailyChange": -1.280164802825191
+          },
+          {
+            "date": "2026-07-18",
+            "price": 32075,
+            "seriesChange": -8.147193585337915,
+            "ytdChange": 73.54723514771129,
+            "dailyChange": -4.382173200178864
+          },
+          {
+            "date": "2026-07-21",
+            "price": 32440,
+            "seriesChange": -7.101947308132875,
+            "ytdChange": 75.52212963964939,
+            "dailyChange": 1.137957911145752
+          },
+          {
+            "date": "2026-07-22",
+            "price": 32185,
+            "seriesChange": -7.832187857961054,
+            "ytdChange": 74.14240883021318,
+            "dailyChange": -0.7860665844636251
+          },
+          {
+            "date": "2026-07-23",
+            "price": 32055,
+            "seriesChange": -8.20446735395189,
+            "ytdChange": 73.43902175089276,
+            "dailyChange": -0.4039148671741494
+          },
+          {
+            "date": "2026-07-24",
+            "price": 32065,
+            "seriesChange": -8.175830469644902,
+            "ytdChange": 73.49312844930202,
+            "dailyChange": 0.03119638121977851
+          },
+          {
+            "date": "2026-07-25",
+            "price": 31070,
+            "seriesChange": -11.02520045819015,
+            "ytdChange": 68.10951195758035,
+            "dailyChange": -3.10307188523312
+          },
+          {
+            "date": "2026-07-28",
+            "price": 31130,
+            "seriesChange": -9.10948905109489,
+            "ytdChange": 68.43415214803593,
+            "dailyChange": -1.33122028526149
+          }
+        ]
+      },
+      {
+        "seriesId": 1,
+        "referenceDate": "2026-07-28",
+        "referencePrice": 31130,
+        "expiryDate": "2026-08-27",
+        "observations": [
+          {
+            "date": "2026-07-29",
+            "price": 31675,
+            "seriesChange": 1.750722775457758,
+            "ytdChange": 71.38296721134077,
+            "dailyChange": 1.750722775457758
+          },
+          {
+            "date": "2026-07-30",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-07-31",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-03",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-04",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-05",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-06",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-07",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-10",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-11",
+            "price": null,
+            "seriesChange": null,
+            "ytdChange": null,
+            "dailyChange": null
+          },
+          {
+            "date": "2026-08-12",
+            "price": 35580,
+            "seriesChange": 12.32833464877664,
+            "ytdChange": 92.511632940158,
+            "dailyChange": 12.32833464877664
+          }
+        ]
+      }
+    ]
+  }
+}

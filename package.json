@@ -1,0 +1,67 @@
+{
+  "name": "stock-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix frontend\" \"electron .\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npx tsc",
+    "pack": "npm run build:frontend && npm run build:backend && electron-builder --dir",
+    "dist": "npm run build:frontend && npm run build:backend && electron-builder --win nsis --x64"
+  },
+  "build": {
+    "appId": "com.markettracker.app",
+    "productName": "Market Tracker",
+    "artifactName": "MarketTracker-Setup.exe",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "package.json",
+      "main.js",
+      "frontend/dist/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "backend/dist",
+        "to": "backend/dist",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "backend/node_modules",
+        "to": "backend/node_modules",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "backend/prisma",
+        "to": "backend/prisma",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "backend/package.json",
+        "to": "backend/package.json"
+      },
+      {
+        "from": "backend/dev.db",
+        "to": "backend/dev.db"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.4",
+    "electron": "^43.3.0",
+    "electron-builder": "^26.15.3"
+  }
+}

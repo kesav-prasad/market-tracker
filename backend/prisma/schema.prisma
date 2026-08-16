@@ -1,0 +1,215 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model MarketCalendar {
+  id        Int      @id @default(autoincrement())
+  name      String   @unique // e.g., "NSE Equity", "BSE Equity"
+  timezone  String   @default("Asia/Kolkata")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  instruments Instrument[]
+  holidays    Holiday[]
+  sessions    MarketSession[]
+}
+
+model Instrument {
+  id               Int      @id @default(autoincrement())
+  symbol           String   @unique
+  name             String
+  category         String
+  exchange         String   @default("NSE")
+  isActive         Boolean  @default(true)
+  provider         String   @default("MOCK_PROVIDER") // Identifies the source
+  providerSymbol   String?  // Explicit mapping symbol for the provider
+  currency         String   @default("INR")
+  displayPrecision Int      @default(2)
+  marketCalendarId Int      @default(1)
+  isFavourite      Boolean  @default(false)
+  favouriteCreatedAt DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  lastSeriesChangePercent Float?
+  lastSeriesEndDate       DateTime?
+  marketCalendar    MarketCalendar @relation(fields: [marketCalendarId], references: [id])
+  priceObservations PriceObservation[]
+  dailyMetrics      DailyMetric[]
+  corporateActionFactors CorporateActionFactor[]
+}
+
+model Holiday {
+  id               Int      @id @default(autoincrement())
+  date             DateTime
+  description      String
+  marketCalendarId Int      @default(1)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  marketCalendar MarketCalendar @relation(fields: [marketCalendarId], references: [id])
+  
+  @@unique([date, marketCalendarId])
+}
+
+model MarketSession {
+  id                 Int      @id @default(autoincrement())
+  date               DateTime
+  marketCalendarId   Int      @default(1)
+  isTradingDay       Boolean
+  status             String   @default("CLOSED") // OPEN, CLOSED, HOLIDAY, WEEKEND, SPECIAL
+  openTime           String?  // HH:MM IST
+  closeTime          String?  // HH:MM IST
+  specialSessionFlag Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  marketCalendar MarketCalendar @relation(fields: [marketCalendarId], references: [id])
+  
+  @@unique([date, marketCalendarId])
+}
+
+model Series {
+  id                   Int      @id @default(autoincrement())
+  referenceDate        DateTime // The starting date (e.g. Last Tuesday of previous month)
+  expectedExpiryDate   DateTime // The ending date (e.g. Last Tuesday of current month)
+  isFinalized          Boolean  @default(false)
+  finalizationTimestamp DateTime?
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  dailyMetrics DailyMetric[]
+}
+
+model PriceObservation {
+  id            Int      @id @default(autoincrement())
+  instrumentId  Int
+  date          DateTime
+  price         Float?
+  source        String
+  status        String   // VERIFIED, PROVISIONAL, STALE, MISSING, INVALID, UNVERIFIED, MOCK
+  timestamp     DateTime // Market or fetched timestamp
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  instrument    Instrument @relation(fields: [instrumentId], references: [id])
+  discrepancies Discrepancy[]
+
+  @@unique([instrumentId, date, source])
+}
+
+model DailyMetric {
+  id                  Int      @id @default(autoincrement())
+  instrumentId        Int
+  seriesId            Int
+  date                DateTime
+  price               Float?
+  referencePrice      Float?    // Immutable reference price for the series
+  previousClosePrice  Float?
+  todayChange         Float?
+  seriesChange        Float?
+  ytdReferenceDate    DateTime?
+  ytdReferencePrice   Float?
+  ytdChange           Float?
+  status              String   // VERIFIED, MISSING, MOCK, etc.
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+
+  instrument Instrument @relation(fields: [instrumentId], references: [id])
+  series     Series     @relation(fields: [seriesId], references: [id])
+
+  @@unique([instrumentId, seriesId, date])
+}
+
+model Discrepancy {
+  id                  Int      @id @default(autoincrement())
+  priceObservationId  Int
+  oldValue            Float?
+  newValue            Float?
+  oldStatus           String?
+  newStatus           String?
+  reason              String
+  source              String
+  timestamp           DateTime @default(now())
+  resolved            Boolean  @default(false)
+  
+  priceObservation PriceObservation @relation(fields: [priceObservationId], references: [id])
+}
+
+model AuditLog {
+  id          Int      @id @default(autoincrement())
+  action      String
+  entityType  String
+  entityId    String?
+  oldValue    String?
+  newValue    String?
+  reason      String?
+  source      String
+  timestamp   DateTime @default(now())
+}
+
+model GoogleSheetSnapshot {
+  id                Int      @id @default(autoincrement())
+  importTimestamp   DateTime @default(now())
+  marketDate        DateTime
+  instrumentSymbol  String
+  referencePrice    Float?
+  currentPrice      Float?
+  previousClose     Float?
+  todayChange       Float?
+  seriesChange      Float?
+  sourceInfo        String?
+
+  @@index([marketDate, instrumentSymbol])
+}
+
+model ReconciliationRecord {
+  id                Int      @id @default(autoincrement())
+  marketDate        DateTime
+  instrumentSymbol  String
+  metric            String   // REFERENCE_PRICE, CURRENT_PRICE, PREVIOUS_CLOSE, TODAY_CHANGE, SERIES_CHANGE
+  sheetValue        Float?
+  appValue          Float?
+  difference        Float?
+  status            String   // MATCH, MISMATCH, MISSING_APP, MISSING_SHEET
+  timestamp         DateTime @default(now())
+
+  @@index([marketDate, instrumentSymbol])
+}
+
+model CorporateActionFactor {
+  id               Int      @id @default(autoincrement())
+  instrumentId     Int
+  date             DateTime // The ex-date of the corporate action
+  adjustmentFactor Float    // The multiplier to apply to prices BEFORE this date
+  reason           String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  instrument Instrument @relation(fields: [instrumentId], references: [id])
+  
+  @@unique([instrumentId, date])
+}
+
+model CellFormatOverride {
+  id               Int      @id @default(autoincrement())
+  key              String   @unique // e.g., "CELL:SONACOMS:sessionChange", "ROW:SONACOMS", "COLUMN:sessionChange"
+  scope            String   // "CELL", "ROW", "COLUMN", "HEADER"
+  instrumentSymbol String?
+  columnId         String?
+  
+  fillColor        String?
+  textColor        String?
+  fontWeight       String?
+  fontStyle        String?
+  textAlign        String?
+  borders          String?  // Stored as JSON string or a comma-separated format
+  
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
