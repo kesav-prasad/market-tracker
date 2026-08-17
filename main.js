@@ -75,8 +75,14 @@ async function startBackend() {
     ? path.join(userData, 'market_tracker.db')
     : path.join(__dirname, 'backend/prisma/dev.db');
 
-  // Copy template DB to userData on first run
-  if (app.isPackaged && !fs.existsSync(dbPath)) {
+  // Copy template DB to userData on first run or if it's empty
+  let needsCopy = !fs.existsSync(dbPath);
+  if (!needsCopy) {
+    const stats = fs.statSync(dbPath);
+    if (stats.size === 0) needsCopy = true;
+  }
+  
+  if (app.isPackaged && needsCopy) {
     const templatePaths = [
       path.join(process.resourcesPath, 'backend/prisma/dev.db'),
       path.join(process.resourcesPath, 'backend/dev.db'),

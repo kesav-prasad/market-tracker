@@ -8,12 +8,13 @@
     "build:frontend": "cd frontend && npm run build",
     "build:backend": "cd backend && npx tsc",
     "pack": "npm run build:frontend && npm run build:backend && electron-builder --dir",
-    "dist": "npm run build:frontend && npm run build:backend && electron-builder --win nsis --x64"
+    "dist": "npm run build:frontend && npm run build:backend && electron-builder --win nsis --x64",
+    "dist:mac": "npm run build:frontend && npm run build:backend && electron-builder --mac dmg"
   },
   "build": {
     "appId": "com.markettracker.app",
     "productName": "Market Tracker",
-    "artifactName": "MarketTracker-Setup.exe",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
     "directories": {
       "output": "dist"
     },
