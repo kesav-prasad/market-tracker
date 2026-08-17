@@ -5,9 +5,12 @@ import { formatInTimeZone } from 'date-fns-tz';
 
 export class YahooFinanceDataProvider implements MarketDataProvider {
   
-  private formatSymbol(symbol: string): string {
-    // Yahoo Finance symbols for Indian NSE stocks usually have .NS suffix
-    // You can add more complex mappings if needed, for example if BSE is used
+  private formatSymbol(symbol: string, providerSymbol?: string | null): string {
+    if (providerSymbol) {
+      if (providerSymbol.startsWith('NSE:')) return `${providerSymbol.replace('NSE:', '')}.NS`;
+      if (providerSymbol.startsWith('BSE:')) return `${providerSymbol.replace('BSE:', '')}.BO`;
+      return providerSymbol;
+    }
     if (!symbol.includes('.')) {
       return `${symbol}.NS`;
     }
@@ -15,7 +18,7 @@ export class YahooFinanceDataProvider implements MarketDataProvider {
   }
 
   async getObservation(symbol: string, date: Date, providerSymbol?: string | null): Promise<Observation> {
-    const formattedSymbol = providerSymbol || this.formatSymbol(symbol);
+    const formattedSymbol = this.formatSymbol(symbol, providerSymbol);
     // Yahoo Finance historical expects string dates (YYYY-MM-DD) or Date objects
     // Using explicit Asia/Kolkata formatted strings prevents local server timezone drift
     const period1Str = formatInTimeZone(date, 'Asia/Kolkata', 'yyyy-MM-dd');
@@ -65,7 +68,7 @@ export class YahooFinanceDataProvider implements MarketDataProvider {
   }
 
   async getLatestObservation(symbol: string, providerSymbol?: string | null): Promise<Observation> {
-    const formattedSymbol = providerSymbol || this.formatSymbol(symbol);
+    const formattedSymbol = this.formatSymbol(symbol, providerSymbol);
     
     try {
       const quote: any = await (yahooFinance.quote(formattedSymbol) as Promise<any>);
