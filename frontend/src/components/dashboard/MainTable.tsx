@@ -647,7 +647,7 @@ let activeFormat: Partial<FormatState> = {};
   };
 
 
-  let sortedMetrics = [...metrics].map(m => {
+  let sortedMetrics = [...(metrics || [])].map(m => {
     let customChange = m.customChange;
     if (customDate && matrix?.rows?.[m.instrument]?.data?.[customDate]?.price) {
       const oldPrice = matrix.rows[m.instrument].data[customDate].price;

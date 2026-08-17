@@ -104,7 +104,10 @@ async function startBackend() {
   for (const dir of prismaClientDirs) {
     if (!fs.existsSync(dir)) continue;
     const files = fs.readdirSync(dir);
-    const engineFile = files.find(f => f.endsWith('.node'));
+    const isWin = process.platform === 'win32';
+    let engineFile = files.find(f => f.endsWith('.node') && (isWin ? f.includes('windows') : !f.includes('windows')));
+    if (!engineFile) engineFile = files.find(f => f.endsWith('.node')); // fallback
+
     if (engineFile) {
       process.env.PRISMA_QUERY_ENGINE_LIBRARY = path.join(dir, engineFile);
       log(`Prisma engine set: ${process.env.PRISMA_QUERY_ENGINE_LIBRARY}`);
