@@ -1,7 +1,5 @@
-import { PrismaClient } from '@prisma/client';
+import prisma from '../db';
 import { CalculationEngine } from './CalculationEngine';
-
-const prisma = new PrismaClient();
 
 export interface AuditResult {
   symbol: string;

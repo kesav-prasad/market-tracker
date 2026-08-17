@@ -395,8 +395,6 @@ router.get('/export-current', async (req, res) => {
     sortedDates = validDates;
     
     const workbook = new ExcelJS.Workbook();
-    const { YahooFinanceDataProvider } = require('../providers/YahooFinanceDataProvider');
-    const mockProvider = new YahooFinanceDataProvider();
     
     // Get latest metrics for Dashboard
     const latestMetricsMap = new Map();
@@ -404,6 +402,25 @@ router.get('/export-current', async (req, res) => {
       const existing = latestMetricsMap.get(metric.instrumentId);
       if (!existing || metric.date > existing.date) {
         latestMetricsMap.set(metric.instrumentId, metric);
+      }
+    }
+
+    // Pre-fetch Jan 1st data for all instruments to avoid slow loops
+    const currentYear = new Date().getFullYear();
+    const jan1Date = new Date(`${currentYear}-01-01T00:00:00Z`);
+    const nextDate = new Date(`${currentYear}-01-15T00:00:00Z`); // Search within first 15 days
+    
+    const jan1ObsList = await prisma.priceObservation.findMany({
+      where: {
+        date: { gte: jan1Date, lte: nextDate }
+      },
+      orderBy: { date: 'asc' }
+    });
+    
+    const jan1Map = new Map();
+    for (const obs of jan1ObsList) {
+      if (!jan1Map.has(obs.instrumentId) && obs.price !== null) {
+        jan1Map.set(obs.instrumentId, obs.price);
       }
     }
 
@@ -448,15 +465,14 @@ router.get('/export-current', async (req, res) => {
     sessionMatrixSheet.getRow(1).alignment = { horizontal: 'center' };
 
     let rowIndex = 2; // starts at 2 because of header
-    const jan1Date = new Date('2026-01-01T00:00:00');
 
     for (const inst of instruments) {
        // --- DASHBOARD SHEET DATA ---
        const latest = latestMetricsMap.get(inst.id);
-       const jan1Obs = await mockProvider.getObservation(inst.symbol, jan1Date);
+       const jan1Price = jan1Map.get(inst.id);
        let customChange = 'N/A';
-       if (latest && jan1Obs && jan1Obs.price) {
-         customChange = ((latest.price - jan1Obs.price) / jan1Obs.price) as any;
+       if (latest && latest.price && jan1Price) {
+         customChange = ((latest.price - jan1Price) / jan1Price) as any;
        }
 
        const dashRow = dashboardSheet.addRow({
